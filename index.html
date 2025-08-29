@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style_responsive.css">
+    <link rel="stylesheet" href="style.mobile.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,7 +24,7 @@
 
             <nav>
                 <div class="left">
-                    <a href="#"><img style="width: 55px ; border-radius: 50%;" src="Materials/eye_logo.png"
+                    <a href="#"><img id="nav_logo"src="Materials/eye_logo.png"
                             alt="click"></a>
                 </div>
                 <div class="right">
@@ -40,7 +43,7 @@
             </nav>
             <div class="center">
                 <h1 class="landing_page_text">The story of unknown</h1>
-                <img class="eye" style="width: 500px; border-radius: 50%;" src="Materials/eye_logo.png" alt="">
+                <img class="eye" src="Materials/eye_logo.png" alt="">
             </div>
             <img class="bc" src="Materials/Stars Glitter GIF - Stars Glitter Gb - Discover & Share GIFs.gif" alt="">
 
@@ -49,9 +52,9 @@
     </section>
 
     <section class="earth_health">
-        <h1 class="earth_text">Health of Our Earth</h1>
+        <h1 style="margin-bottom: 20px ;" class="earth_text">Health of Our Earth</h1>
         <div class="body">
-            <div class="card1 card">
+            <div class="card1 card fly-in">
                 <div class="card_img">
                     <img class="earth_img" src="Materials/global_warming.png" alt="">
                 </div>
@@ -66,8 +69,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card2 card">
-                <div class="card_img">earth_img
+            <div class="card2 card fly-in">
+                <div class="card_img">
                     <img class="earth_img" src="Materials/deforestation.png" alt="">
                 </div>
                 <div class="card_data">
@@ -81,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card3 card">
+            <div class="card3 card fly-in">
                 <div class="card_img">
                     <img src="Materials/air_polution.png" alt="" class="earth_img">
                 </div>
@@ -96,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card4 card">
+            <div class="card4 card fly-in">
                 <div class="card_img">
                     <img src="Materials/water_shortage.png" alt="" class="earth_img">
                 </div>
@@ -110,7 +113,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card5 card">
+            <div class="card5 card fly-in">
                 <div class="card_img">
                     <img src="Materials/climate_change.jpg" alt="" class="earth_img">
                 </div>
@@ -124,7 +127,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card6 card">
+            <div class="card6 card fly-in">
                 <div class="card_img">
                     <img src="Materials/plastic.png" alt="" class="earth_img">
                 </div>
@@ -143,12 +146,15 @@
     </section>
 
     <section>
+        <div class="earth_text fly-in">
 
-        <h1 class="earth_text">Some proud moment for mankind.</h1>
+            <h1>Some proud moment for mankind.</h1>
+        </div>
 
-        <div class="missions">
 
-            <div class="mission_card1 mission_card">
+        <div class="missions fly-in">
+
+            <div class="mission_card1 mission_card fly-in">
                 <div class="mission_img">
                     <img class="mission_image" src="Materials/mission_appolo.png" alt="">
                 </div>
@@ -164,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="mission_card2 mission_card">
+            <div class="mission_card2 mission_card fly-in">
                 <div class="mission_data">
                     <div id="m_heading"><a class="mission-heading" href="#">Curiosity Rover</a></div>
                     <div id="m_sub_heading">
@@ -180,7 +186,7 @@
                 </div>
             </div>
 
-            <div class="mission_card3 mission_card">
+            <div class="mission_card3 mission_card fly-in">
                 <div style="border: 3px solid black;" class="mission_img">
                     <img class="mission_image" src="Materials/mission_ISS.png" alt="">
                 </div>
@@ -195,7 +201,7 @@
                 </div>
             </div>
 
-            <div class="mission_card4 mission_card">
+            <div class="mission_card4 mission_card fly-in">
                 <div class="mission_data">
                     <div id="m_heading"><a class="mission-heading" href="#">Hubble Space Telescope</a></div>
                     <div id="m_sub_heading">
@@ -211,7 +217,7 @@
                 </div>
             </div>
 
-            <div class="mission_card5 mission_card">
+            <div class="mission_card5 mission_card fly-in">
                 <div class="mission_img">
                     <img class="mission_image" src="Materials/mission_voyger_1.png" alt="">
                 </div>
@@ -232,7 +238,7 @@
 
     <footer>
         <div class="left" style="color: white;">
-            <h1  style="text-decoration: underline;" >Contact us</h1>
+            <h1 class="f_left" style="text-decoration: underline;  text-align: center;">Contact us</h1>
             <div class="left_content">
                 <div style="display: flex; align-items: center;">
                     <h2>Email-</h2>
@@ -245,10 +251,9 @@
             </div>
         </div>
         <div class="mid">
-
         </div>
         <div style="color: white;" class="rigth">
-            <h1 style="text-decoration: underline;">About</h1>
+            <h1 class="f_right" style="text-decoration: underline; text-align: center;">About</h1>
             <div class="right_content">
                 <h2>Created by: Team IMpulse</h2>
 
