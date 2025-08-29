@@ -330,3 +330,127 @@ footer{
 }
 /* Dektop view landing page ends here */
 /* starts coding below  */
+/* 🌍 Base Styles (Desktop First) 
+   - Default styling applies to large screens (laptops/desktops).
+   - Then we override for smaller screens using media queries below.
+*/
+
+
+/* 📱 Small Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Navbar */
+  nav .right ul {
+    flex-direction: column; /* stack menu */
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+
+  nav img {
+    width: 35px; /* smaller logo */
+  }
+
+  /* Landing */
+  .eye {
+    width: 200px !important; /* shrink hero image */
+  }
+  .landing_page_text {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /* Cards */
+  .earth_health .body {
+    display: flex;
+    flex-direction: column; /* stack cards */
+    align-items: center;
+  }
+  .card {
+    width: 90%; 
+    margin-bottom: 15px;
+  }
+
+  /* Missions */
+  .missions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .mission_card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer h1, footer h2 {
+    font-size: 0.9rem;
+  }
+}
+
+/* 📱 Medium Phones & Tablets (481px – 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Navbar */
+  nav .right ul {
+    font-size: 1rem;
+    gap: 15px;
+  }
+
+  /* Landing */
+  .eye {
+    width: 300px !important;
+  }
+  .landing_page_text {
+    font-size: 1.5rem;
+  }
+
+  /* Cards grid */
+  .earth_health .body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+  }
+  .card {
+    width: 100%;
+  }
+
+  /* Missions */
+  .missions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* 💻 Tablets & Small Laptops (769px – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Navbar */
+  nav .right ul {
+    font-size: 1.1rem;
+    gap: 20px;
+  }
+
+  /* Landing */
+  .eye {
+    width: 400px !important;
+  }
+  .landing_page_text {
+    font-size: 2rem;
+  }
+
+  /* Cards grid */
+  .earth_health .body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 25px;
+  }
+
+  /* Missions */
+  .missions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards side by side */
+    gap: 25px;
+  }
+}
+
+/* 🖥️ Large Screens (1025px+) 
+   - Your existing CSS will already handle big screens.
+   - You don’t need changes unless you want more spacing.
+*/
