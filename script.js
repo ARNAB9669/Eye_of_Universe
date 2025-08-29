@@ -1,0 +1,1 @@
+document.title="Get ready to explore"

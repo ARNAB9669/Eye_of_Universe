@@ -309,6 +309,24 @@ li:hover>a {
     height: 100%;
 }
 /* This was the wned of mission and body */
+footer{
+    background-color: rgb(37, 40, 45);
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
 .e-mail:hover{
     color: aqua;
 }
+.mid{
+    width: 5px;
+    background-color: white;
+}
+.left_content{
+    padding-top:20px;
+}
+.right_content{
+    padding-top:20px;
+}
+/* Dektop view landing page ends here */
+/* starts coding below  */
